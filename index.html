@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/custom.css?v=1.1" rel="stylesheet">
+    <link href="css/custom.css?v=1.15" rel="stylesheet">
 </head>
 
 <body>
@@ -42,11 +42,14 @@
                     <div class="dropdown-menu fade" aria-labelledby="dropdown01">
                         <a id="purposeLink" class="dropdown-item" href="/about.html">What is Hobby@UCI?</a>
                         <a id="boardLink" class="dropdown-item" href="/board.html">Club Board</a>
-                        <a id="pastLink" class="dropdown-item" href="/pasthobbies.html">Past Hobbies</a>
+                        <a id="pastLink" class="dropdown-item" href="/pastmonths.html">Past Months</a>
                     </div>
                 </li>
                 <li class="nav-item">
                     <a id="newsLink" class="nav-link" href="/news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a id="resourcesLink" class="nav-link" href="/resources.html">Resources</a>
                 </li>
                 <li class="nav-item">
                     <a id="eventLink" class="nav-link" href="/events.html">Event Calendar</a>
@@ -123,10 +126,10 @@
     <footer class="container">
         <div class="row">
             <div class="col-md-4 sm-icon" data-sr="wait 1.8s scale up 20%">
-                <a href="#"><img src="img/fb_logo.png" style="max-height: 8vh"></a>
+                <a href="https://www.facebook.com/marcuswong890" target="_blank"><img src="img/fb_logo.png" style="max-height: 8vh"></a>
             </div>
             <div class="col-md-4 sm-icon" data-sr="wait 1.9s scale up 20%">
-                <a href="#"><img src="img/ds_logo.png" style="max-height: 8vh"></a>
+                <a href="https://discord.gg/gXMk4da" target="_blank"><img src="img/ds_logo.png" style="max-height: 8vh"></a>
             </div>
             <div class="col-md-4 sm-icon" data-sr="wait 2s scale up 20%">
                 <a href="#"><img src="img/tw_logo.png" style="max-height: 8vh"></a>
@@ -171,6 +174,9 @@
                     break;
                 case "Board | Hobby@UCI":
                     $('#boardLink').addClass('active');
+                    break;
+                case "Past Months | Hobby@UCI":
+                    $('#pastLink').addClass('active');
                     break;
                 case "404 Not Found":
                     break;

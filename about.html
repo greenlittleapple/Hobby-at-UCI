@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/custom.css?v=1.1" rel="stylesheet">
+    <link href="css/custom.css?v=1.15" rel="stylesheet">
 </head>
 
 <body>
@@ -42,11 +42,14 @@
                     <div class="dropdown-menu fade" aria-labelledby="dropdown01">
                         <a id="purposeLink" class="dropdown-item active" href="/about.html">What is Hobby@UCI?</a>
                         <a id="boardLink" class="dropdown-item" href="/board.html">Club Board</a>
-                        <a id="pastLink" class="dropdown-item" href="/pasthobbies.html">Past Hobbies</a>
+                        <a id="pastLink" class="dropdown-item" href="/pastmonths.html">Past Months</a>
                     </div>
                 </li>
                 <li class="nav-item">
                     <a id="newsLink" class="nav-link" href="/news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a id="resourcesLink" class="nav-link" href="/resources.html">Resources</a>
                 </li>
                 <li class="nav-item">
                     <a id="eventLink" class="nav-link" href="/events.html">Event Calendar</a>
@@ -66,13 +69,52 @@
                 <div id="about_gen_div" class="col-md-6 about_div">
                     <h1 class="about_header" id="about_gen">General</h1>
                     <p class="about_desc">
-                        Hobby@UCI is the first ever club at UCI dedicated to learning new hobbies! Every month, members take up a designated hobby and improve it over the month. The club provides all the resources needed for the hobby, and the only thing a member needs to do is practice it. We also have a club room (ICS 195) for the sole purpose of hobbyism, and it is open daily for members to practice together!
+                        Hobby@UCI is the first ever club at UCI dedicated to learning new hobbies. Each month, all members take up the designated hobby and work on improving it over the month. At the end of the month, we reflect on The club provides all the resources and instructions needed for the hobby, so that members can learn as well as possible. Hobby@UCI also has a club room (ICS 195) for the sole purpose of hobbyism, and it is open daily for members to practice together!
+                        <br><br>
+                        <b>How to join:</b><br>It is absolutely free to be a member of Hobby@UCI! All you need to do is fill out the form at the bottom of this page and attend the weekly Friday meetings.
                     </p>
                 </div>
-                <div id="about_gen_pic" class="col-md-6 text-center" style="max-height: 60vh; max-width: 90vw;">
-                    <img src="img/uci_map.jpg" style="max-height: 100% !important; max-width: 100% !important; border: 2px solid">
+                <div class="col-md-6 text-center" id="about-map">
+                    <h2>Find us at ICS 195!</h2>
+                    <div class="mapouter" style="margin: auto">
+                        <div class="gmap_canvas"><iframe width="700" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Information and Computer Science I (ICS 1), Inner Ring Rd, Irvine, CA 92697&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><a href="https://www.pureblack.de/webdesign-muenchen/"></a>
+                        <style>
+                            .mapouter {
+                                overflow: hidden;
+                                max-height: 90vh;
+                                max-width: 90vw;
+                            }
+
+                            .gmap_canvas {
+                                background: none !important;
+                                max-height: 100%;
+                                max-width: 100%;
+                            }
+                        </style>
+                    </div>
                 </div>
-                <div id="about_month_div" class="col-md-6 about_div">
+                <div id="about_back_div" class="col-md-6 about_div">
+                    <br>
+                    <h1 class="about_header" id="about_back">Mission and Values</h1>
+                    <p class="about_desc">
+                        Although students sometimes put free time to good use, we sometimes like to spend it just doing things like watching TV, playing video games, and of course, not studying. Before long, we end up in an unhealthy daily routine of <b>class/work->kill time->sleep->repeat</b>.
+                        <br>For this reason, we created Hobby@UCI for those who want to spend their time productively for long-term self improvement. We believe that, instead of living every day only looking forward to pleasure activities, we should have and actively work to future goals. Our mission at Hobby@UCI is to help students accomplish this idea with our three values:
+                        <br><b>1. Interesting and Unique Hobbies</b>
+                        <br><b>2. Manageable (Monthly) Goals</b>
+                        <br><b>3. Universal Accessibility and Participation</b>
+                        <!--                        Hobby@UCI was started in 2018 as an idea to bring meaningful purpose into students' lives. Its founder, Marcus Wong, believed that he was stuck in a daily routine of classes, homework, and recreation (e.g. video games). Although it was comfortable, he thought his life was a waste of time, because he was not spending it to better himself. As a result, he created Hobby@UCI as a manageable and exciting solution, manageable because the hobbies take place over a month, and exciting because members switch hobbies every month!-->
+                    </p>
+                </div>
+                <div class="col-md-12"></div>
+                <div id="about-join-div" class="col-md-6 text-center">
+                    <h1 class="about_header" id="about-join">How to Join</h1>
+                    <p class="about_desc">- There are no club fees or dues to be a member.<br>- There is no skill requirement, although we highly recommend coming in with a mindset for learning.<br>(Note: although there is no club fee, because some hobbies require specialized materials, member can choose to purchase these materials from the club store if needed.)<br><b>To join, just fill out the form below!</b></p>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeZGYniZyaMmnR1HQ5IOwGPhIOsPsBQ-Hi0eeFYHZMdoTr0xg/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                    <br><br>
+                    <p><a id="front_learn" class="btn btn-primary btn-lg" href="/board.html">CLUB BOARD &raquo;</a></p>
+                </div>
+                <!--
+                <div id="about_month_div" class="col-md-9 about_div">
                     <br>
                     <h1 class="about_header" id="about_month">Monthly Process</h1>
                     <p class="about_desc">- At the start of the month, the hobby is announced on this website and social media.
@@ -80,16 +122,8 @@
                         <br>- Members can then practice the hobby with others in the club room daily or during Friday meetings, where we can report our progress.
                         <br>- Finally, on the last Friday, we reflect on our total progress in a conclusion meeting and preview the next month!</p>
                 </div>
-                <div class="col-md-6"></div>
-                <div id="about_back_div" class="col-md-6 about_div">
-                    <br>
-                    <h1 class="about_header" id="about_back">Background</h1>
-                    <p class="about_desc">
-                        Hobby@UCI was started in 2018 by Marcus Wong as a way to encourage himself and others to take advantage of life. As a college student, Marcus felt that he was spending every day stuck in a boring, unhealthy routine of classes and video games. Even though he had interesting days every now and then, he felt that he was living by the day and had no long-term goals. So, he decided to create a club with the main theme of manageable goals, that would also serve as a place to hang out and learn with others!
-                    </p>
-                </div>
-                <div id="about_back_pic" class="col-md-5">
-                </div>
+-->
+
 
             </div>
 
@@ -102,10 +136,10 @@
     <footer class="container">
         <div class="row">
             <div class="col-md-4 sm-icon" data-sr="wait 1.8s scale up 20%">
-                <a href="#"><img src="img/fb_logo.png" style="max-height: 8vh"></a>
+                <a href="https://www.facebook.com/marcuswong890" target="_blank"><img src="img/fb_logo.png" style="max-height: 8vh"></a>
             </div>
             <div class="col-md-4 sm-icon" data-sr="wait 1.9s scale up 20%">
-                <a href="#"><img src="img/ds_logo.png" style="max-height: 8vh"></a>
+                <a href="https://discord.gg/gXMk4da" target="_blank"><img src="img/ds_logo.png" style="max-height: 8vh"></a>
             </div>
             <div class="col-md-4 sm-icon" data-sr="wait 2s scale up 20%">
                 <a href="#"><img src="img/tw_logo.png" style="max-height: 8vh"></a>
@@ -151,13 +185,15 @@
                 case "Board | Hobby@UCI":
                     $('#boardLink').addClass('active');
                     break;
+                case "Past Months | Hobby@UCI":
+                    $('#pastLink').addClass('active');
+                    break;
                 case "404 Not Found":
                     break;
             }
         });
 
-        window.onload = function() {
-        }
+        window.onload = function() {}
     </script>
 
 </body>
