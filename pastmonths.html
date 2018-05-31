@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/custom.css?v=1.15" rel="stylesheet">
+    <link href="css/custom.css?v=1.21" rel="stylesheet">
 </head>
 
 <body>
@@ -97,10 +97,11 @@
         window.sr = new scrollReveal({
             delay: 'once',
             mobile: false,
-            vFactor: .2
+            vFactor: .4
         });
         var swup = new Swup({
-            preload: true
+            preload: true,
+            reset: true
         });
 
         document.addEventListener('swup:contentReplaced', event => {
@@ -119,20 +120,22 @@
                     break;
                 case "About | Hobby@UCI":
                     $('#purposeLink').addClass('active');
+                    sr.init();
                     break;
                 case "Board | Hobby@UCI":
                     $('#boardLink').addClass('active');
+                    sr.init();
                     break;
                 case "Past Months | Hobby@UCI":
                     $('#pastLink').addClass('active');
+                    sr.init();
                     break;
                 case "404 Not Found":
                     break;
             }
         });
 
-        window.onload = function() {
-        }
+        window.onload = function() {}
     </script>
 
 </body>
