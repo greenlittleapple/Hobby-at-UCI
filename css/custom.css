@@ -168,6 +168,9 @@ a:hover {
 }
 
 @media (max-width: 600px) {
+    #front-nothing {
+        font-size: 6vw;
+    }
     #front_container {
         padding-left: 10vw;
     }
@@ -208,6 +211,13 @@ a:hover {
         min-width: 90vw;
         margin: auto;
         margin-bottom: 20px;
+    }
+    #front-nothing {
+        width: 90vw;
+    }
+    #front_container {
+        padding-bottom: 20px;
+        padding-top: 20px;
     }
 }
 

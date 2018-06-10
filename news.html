@@ -1,4 +1,8 @@
-<!doctype html>
+<!doctype php>
+<?php 
+define('WP_USE_THEMES', false);
+require('/news/wp-blog-header.php');
+?>
 <html lang="en">
 
 <head>
@@ -8,7 +12,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Past Months | Hobby@UCI</title>
+    <title>News | Hobby@UCI</title>
     <style>
         [data-sr] {
             visibility: hidden;
@@ -42,11 +46,11 @@
                     <div class="dropdown-menu fade" aria-labelledby="dropdown01">
                         <a id="purposeLink" class="dropdown-item" href="/about.html">What is Hobby@UCI?</a>
                         <a id="boardLink" class="dropdown-item" href="/board.html">Club Board</a>
-                        <a id="pastLink" class="dropdown-item active" href="/pastmonths.html">Past Months</a>
+                        <a id="pastLink" class="dropdown-item" href="/pastmonths.html">Past Months</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a id="newsLink" class="nav-link" href="/news.html">News</a>
+                    <a id="newsLink" class="nav-link active" href="/news.html">News</a>
                 </li>
                 <li class="nav-item">
                     <a id="resourcesLink" class="nav-link" href="/resources.html">Resources</a>
@@ -62,9 +66,7 @@
     </nav>
     <div class="a-fade">
         <main role="main" id="swup">
-            <div id="board_jumbo" class="jumbotron">
-                <h1 id="about_head">Past Months' Hobbies</h1>
-            </div>
+            <iframe id="blog" src="https://www.hobbyatuci.com/news/" width="100%" height="1500px"></iframe>
 
             <!-- /container -->
 
@@ -91,7 +93,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/swup.js"></script>
+    <script src="js/sw  up.js"></script>
     <script type="text/javascript" src="js/scrollReveal.js?v=1.13"></script>
     <script>
         window.sr = new scrollReveal({
@@ -99,7 +101,7 @@
             mobile: false,
             vFactor: .4
         });
-        
+
 
         document.addEventListener('swup:contentReplaced', event => {
             $('#homeLink').removeClass('active');
